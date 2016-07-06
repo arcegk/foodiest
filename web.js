@@ -1,7 +1,5 @@
-console.log("entrando al web.js");
 var gzippo = require('gzippo');
 var express = require('express');
-console.log("entrando a morgan");
 var morgan = require('morgan');
 var app = express();
 

@@ -19,12 +19,12 @@ angular
   ])
   .config(function ($routeProvider) {
     $routeProvider
-      .when('/', {
+      .when('/asdasd', {
         templateUrl: 'views/main.html',
         controller: 'MainCtrl',
         controllerAs: 'main'
       })
-      .when('/menu', {
+      .when('/', {
         templateUrl: 'views/menu.html',
         controller: 'menuController',
         controllerAs: 'menu'
