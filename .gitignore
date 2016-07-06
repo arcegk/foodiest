@@ -1,5 +1,5 @@
 /node_modules
-.DS_STORE
+*/.DS_STORE
 /.tmp
 /.sass-cache
 /bower_components
