@@ -15,7 +15,7 @@
 /* ==========================================================================
    Global styles
    ========================================================================== */
-h1, h4, h5, h6, p, .btn, .navbar-nav a, .form-control, .list-inline, small, #pricing {
+h1, h4, h5, h6, p, .btn, .navbar-nav a, .list-inline, small, #pricing {
   font-family: 'Montserrat', sans-serif;
 }
 
@@ -41,8 +41,6 @@ h1 {
 p {
   font-size: 17px;
   line-height: 22px;
-  color: #929496;
-  font-weight: 400;
 }
 
 /*------------------Utilities---------------------*/
@@ -550,46 +548,6 @@ footer {
 .pricing-container .btn {
     border-radius: 0;
 }
-
-
-
-
-/* ==========================================================================
-   Form styles
-   ========================================================================== */
-.form-control {
-    background-color: #FFFFFF;
-    background-image: none;
-    border: 0px solid transparent;
-    border-radius: 4px;
-    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
-    color: #929496;
-    display: block;
-    font-size: 15px;
-    height: 60px;
-    line-height: 1.42857;
-    padding: 6px 12px;
-    transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
-}
-
-.form-control::-moz-placeholder {
-    color: #d9d9d9;
-    font-size: 15px;
-    opacity: 1;
-}
-
-.form-control::-webkit-placeholder, .form-control::-o-placeholder {
-    color: #d9d9d9;
-    font-size: 15px;
-    opacity: 1;
-}
-
-.form-control::-o-placeholder {
-    color: #d9d9d9;
-    font-size: 15px;
-    opacity: 1;
-}
-
 
 
 
