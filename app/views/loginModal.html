@@ -1,0 +1,51 @@
+<div class="modal fade">
+
+  <div style="width:450px;" class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" ng-click="close()" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 style="text-align:center" class="modal-title">INGRESA TUS DATOS</h4>
+      </div>
+      <div class="modal-body">
+
+		<form ng-hide="exito || fail" class="form-horizontal" role="form">
+		  <div class="form-group">
+		    <label for="name" class="col-sm-2 control-label">Nombre</label>
+		    <div class="col-sm-10">
+		      <input type="text" class="form-control" id="name" placeholder="Tu nombre" ng-model="name">
+		    </div>
+		  </div>
+		  <div class="form-group">
+		    <label for="address" class="col-sm-2 control-label">Dirección</label>
+		    <div class="col-sm-10">
+		      <input type="text" class="form-control" id="inputPassword3" placeholder="Dirección" ng-model="address">
+		    </div>
+		  </div>
+      <div class="form-group">
+        <label for="phone" class="col-sm-2 control-label">Teléfono</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" id="inputPassword3" placeholder="Teléfono" ng-model="phone">
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="comments" class="col-sm-2 control-label">Comentario</label>
+        <div class="col-sm-10">
+          <textarea class="form-control" id="inputPassword3" placeholder="Por ejemplo: Con salsas por favor" ng-model="comment"></textarea>
+        </div>
+      </div>
+		</form>
+
+    <div ng-show="exito" style="text-align:center;"><P><b>¡BUENAS NOTICIAS!</b><br> Tu pedido fue registrado con <b>ÉXITO</b></P></div>
+    <div ng-show="fail"><P>Oops! estamos teniendo problemas, si ves esto, comunicate con nosotros!</P></div>
+
+
+      </div>
+      <div class="modal-footer">
+        <button ng-hide="exito || fail" type="button" ng-click="checkOut()" class="btn btn-primary lol">¡Realizar Pedido!
+        </button>
+        <button ng-show="exito || fail" type="button" ng-click="close()" class="btn" data-dismiss="modal">Gracias</button>
+        <button ng-hide="exito || fail" type="button" ng-click="close()" class="btn" data-dismiss="modal">Cancelar</button>
+      </div>
+    </div>
+  </div>
+</div>

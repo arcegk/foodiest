@@ -1,0 +1,28 @@
+<div class="modal fade">
+
+  <div style="width:400px;" class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" ng-click="close()" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 style="text-align:center" class="modal-title">CONFIRMA TU PEDIDO</h4>
+      </div>
+      <div class="modal-body">
+        <div class="row" ng-repeat="plato in data">
+            <div style="margin-left:0px; margin-right:0px; margin-bottom:5px; border-bottom: solid 1px #e5e5e5;" class="row">
+              <div class="col-sm-4"><b>{{plato.tipo}}</b></div>
+              <div class="col-sm-8">{{plato.nombre}}</div>
+            </div>
+            <div></div>
+        </div>
+        <div class="row">
+          <div style="text-align:center; padding-top:5px;" class="col-sm-12"><strong>Precio : ${{price}}</strong></div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" ng-click="good()" class="btn btn-primary lol" data-dismiss="modal">¡Está bien!
+        </button>
+        <button type="button" ng-click="close()" class="btn" data-dismiss="modal">Déjame revisar</button>
+      </div>
+    </div>
+  </div>
+</div>
