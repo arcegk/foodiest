@@ -549,7 +549,13 @@ footer {
     border-radius: 0;
 }
 
+.n400 {
+  width : 400px !important;
+}
 
+.n450 {
+  width : 450px !important;
+}
 
 /* ==========================================================================
    Mobile styles
@@ -560,6 +566,14 @@ footer {
 h3 {
     font-size: 20px;
     line-height: 20px;
+}
+
+.n400 {
+    width : 100% !important;
+}
+
+.n450 {
+    width : 100% !important;
 }
 
 .btn-lg {
