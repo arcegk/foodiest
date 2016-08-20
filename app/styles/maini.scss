@@ -557,6 +557,11 @@ footer {
 /* Landscape phones and down */
 @media (max-width: 480px) { 
 
+h3 {
+    font-size: 20px;
+    line-height: 20px;
+}
+
 .btn-lg {
   font-size: 12.5px;
   line-height: 1.33;
