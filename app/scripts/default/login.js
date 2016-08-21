@@ -10,6 +10,7 @@ angular.module("FoddieApp")
 		$scope.comment = "";
 		$scope.exito = false;
 		$scope.fail = false;
+		$scope.enviando = false;
 		var platos_ids = [];
 
 		$scope.checkOut = function(){
@@ -21,7 +22,9 @@ angular.module("FoddieApp")
 							nombre : $scope.name, telefono : $scope.phone,
 							empresa : "", observaciones : $scope.comment,
 							precio : price, empresa : "" };
-		
+
+
+			$scope.enviando = true;
 			$http({
 				method : 'POST',
 				url : 'http://www.restauranteplaza.co/pedido/',
@@ -29,6 +32,7 @@ angular.module("FoddieApp")
 
 			}).then(function successCallback(response){
 				$scope.exito = true;
+				$scope.enviando = false;
 			},function successCallback(response){
 				$scope.fail = true;
 			});
